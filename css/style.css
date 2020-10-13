@@ -1,0 +1,78 @@
+body{
+
+}
+
+.row{
+  display: flex;
+  height: calc( 100% - 207px);
+}
+
+.ab{
+  position: absolute;
+  width: 100%;
+}
+
+.col-1{
+  width: 50%;
+}
+
+.col-2{
+  width: 25%;
+  z-index: 1000px;
+}
+
+.move{
+  position: absolute;
+  background-color: darkorchid;
+  height: 200px;
+  width: 600px;
+  animation: moving;
+
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+
+  0% {
+    left: 0%;
+  }
+    
+  50% {
+    left:calc(100% - 600px);
+  }
+  
+  100% {
+    left: 0%;
+  }
+  
+} 
+
+.xmove{
+  position: absolute;
+  background-color: blueviolet;
+  height: 200px;
+  width: 800px;
+  animation: xmoving;
+
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes xmoving {
+
+  0% {
+    right: 0%;
+  }
+    
+  50% {
+    right:calc(100% - 800px);
+  }
+  
+  100% {
+    right: 0%;
+  }
+  
+} 
